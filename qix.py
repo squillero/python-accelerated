@@ -1,6 +1,6 @@
-#  Copyright © 2021 Giovanni Squillero <squillero@polito.it>
-#  Free for personal or classroom use. See 'LICENCE.md' for details.
-#  https://github.com/squillero/python_the-hard-way
+# Example program from https://github.com/squillero/python_the-hard-way
+# Copyright © 2021 Giovanni Squillero <squillero@polito.it>
+# Free for personal or classroom use. See 'LICENCE.md' for details.
 
 import logging
 import random
