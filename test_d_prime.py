@@ -3,27 +3,30 @@
 
 def factorize( my_source : int ) -> list():
     #make int
-    value = int(my_source)
+    num = int(my_source)
     #initialize factor list
     my_factors = list()
     #init while
-    cnt = 2
-    while cnt <= value:
+    div = 2
+    while div <= num:
         #if: I found a factor
-        if (value % cnt) == 0:
-            #print(value % cnt, value, cnt)
+        if (num % div) == 0:
+            #print(num % div, num, div)
             #divide by the factor
-            value //= cnt
-            #print(value)
+            num //= div
+            #print(num)
             #add factor to the list
-            my_factors.append(cnt)
-        
+            my_factors.append(div)
+
+        #if divisor is no factor
         else:
-            #next test factor
-            cnt+=1
+            #advance to next divisor
+            div+=1
     
+    #if no factors were found
     if not my_factors:
-        my_factors.append(value)
+        #put the original number in the list of factors
+        my_factors.append(num)
 
     print(my_source, my_factors)
     return my_factors
@@ -36,6 +39,7 @@ def main():
     factorize(10000)
     factorize(9999)
     factorize(128)
+    factorize(112587)
 
     return None
 
