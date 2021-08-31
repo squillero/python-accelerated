@@ -18,18 +18,18 @@ for num_row in range(1, user_num+1 +1):
     #if print row header
     else:
         #print row header
-        print(f"{int(num_row-1)}\t",end='')
+        print(f"{(num_row-1)}\t",end='')
     
     #scan mul factors on cols
     for num_col in range(1, user_num+1):
         if u1_header == True:
-            print(f"| {int(num_col)}\t",end='')
+            print(f"| {(num_col)}\t",end='')
         else:
             #print row header
-            print(f"| {int(num_row-1) *int(num_col)}\t",end='')
+            print(f"| {(num_row-1) *(num_col)}\t",end='')
             
     #deactivate header mode
     u1_header = False
 
     #end row
-    print("\n")
+    print("|")
