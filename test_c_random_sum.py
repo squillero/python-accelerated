@@ -75,6 +75,15 @@ source = [
 num_values = len(source)
 print(f"number of values: {num_values:10}")
 
+##  make_sorted_touple
+#   generate a touple sorted
+def make_sorted_touple( source_a, source_b ):
+    if (source_a > source_b):
+        return (source_b, source_a)
+    else:
+        return (source_a, source_b)
+
+
 #initialize output sequences
 sum1000 = []
 excluded1000 = []
@@ -84,26 +93,14 @@ for cnt_outer in range( num_values ):
     for cnt_inner in range( cnt_outer +1, num_values ):
         #detect sum
         if (source[cnt_outer] +source[cnt_inner] == 1000):
-            #fetch numbers
-            tmp_a = source[cnt_outer]
-            tmp_b = source[cnt_inner]
-            tmp_s = tmp_a +tmp_b
-            #debug
-            #print(f"{source[cnt_outer]:10} + {source[cnt_inner]:10} = {source[cnt_outer] +source[cnt_inner]:10}")
-            
-            #make sure the smaller number is first
-            if (tmp_a > tmp_b):
-                result1000 = (tmp_b, tmp_a)
-            else:
-                result1000 = (tmp_a, tmp_b)
-
+            temp_twin = make_sorted_touple( source[cnt_outer], source[cnt_inner] ) 
             #detect  if sum has already been found
-            if (result1000 not in sum1000):
+            if (temp_twin not in sum1000):
                 #add to result list
-                sum1000.append(result1000)
+                sum1000.append(temp_twin)
             else:
                 #add to excluded list
-                excluded1000.append(result1000)
+                excluded1000.append(temp_twin)
 
 sum1000.sort()
 excluded1000.sort()
@@ -111,4 +108,4 @@ excluded1000.sort()
 print(f" found: {len(sum1000)} | excluded: {len(excluded1000)}")
 print(f"couples found: {sum1000}")
 print(f"couples excluded: {excluded1000}")
-        
+
