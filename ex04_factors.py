@@ -5,12 +5,11 @@
 def prime_factors(num):
     factor = 2
     factors = []
-    num2 = num
-    while (num2 > 1):
-        remainder = num2 % factor
+    while (num > 1):
+        remainder = num % factor
         if (remainder == 0):
             factors.append(factor)
-            num2 //= factor
+            num //= factor
         else:
             factor += 1
     return factors
