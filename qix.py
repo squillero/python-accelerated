@@ -9,7 +9,6 @@ from collections import deque
 import tkinter as tk
 from tkinter import ttk
 
-
 class Qix:
     def __init__(self, canvas, length = 50):
         self.step_number = 0
