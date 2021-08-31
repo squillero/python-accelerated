@@ -84,13 +84,13 @@ for cnt_outer in range( num_values ):
     for cnt_inner in range( cnt_outer, num_values ):
         #detect sum
         if (source[cnt_outer] +source[cnt_inner] == 1000):
+            #fetch numbers
             tmp_a = source[cnt_outer]
             tmp_b = source[cnt_inner]
             tmp_s = tmp_a +tmp_b
             #debug
             #print(f"{source[cnt_outer]:10} + {source[cnt_inner]:10} = {source[cnt_outer] +source[cnt_inner]:10}")
-            #push sum into a list
-
+            
             #make sure the smaller number is first
             if (tmp_a > tmp_b):
                 result1000 = (tmp_b, tmp_a)
