@@ -2,7 +2,7 @@
 # Copyright © 2021 Giovanni Squillero <squillero@polito.it>
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 
-vett = [
+data = [
     995, 967, 600, 464, 300, 846, 208, 210, 716, 989, 473, 810, 372, 42, 857,
     829, 593, 588, 228, 297, 955, 98, 869, 246, 233, 670, 539, 827, 587, 202,
     358, 885, 860, 665, 539, 899, 161, 894, 394, 512, 204, 676, 439, 345, 822,
