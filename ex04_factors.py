@@ -1,7 +1,6 @@
-// My humble solution to ex04_factors.py
-//
-// Copyright(C) 2021, < https: // gmacario.github.io/>
-
+# My humble solution to ex04_factors.py
+#
+# Copyright(C) 2021, <https://gmacario.github.io/>
 
 def prime_factors(num):
     factor = 2
