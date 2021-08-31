@@ -81,7 +81,7 @@ excluded1000 = []
 #outer loop
 for cnt_outer in range( num_values ):
     #inner loop
-    for cnt_inner in range( cnt_outer, num_values ):
+    for cnt_inner in range( cnt_outer +1, num_values ):
         #detect sum
         if (source[cnt_outer] +source[cnt_inner] == 1000):
             #fetch numbers
