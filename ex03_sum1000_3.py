@@ -61,6 +61,7 @@ data = [
 
 sum1000 = list()
 
+# check (500, 500)
 if data.count(500) > 1:
     sum1000.append((500, 500))
 
