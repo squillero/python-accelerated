@@ -67,4 +67,24 @@ my_generator_instance = my_finite_yield_generator()
 print( "ask a value. yield return but return state", next(my_generator_instance) )
 print( "ask a value. yield return but return state", next(my_generator_instance) )
 #third call crash because yield is over
-print( "ask a value. yield return but return state", next(my_generator_instance) )
+#print( "ask a value. yield return but return state", next(my_generator_instance) )
+
+#----------------------------------------------------
+# see optimization potential
+
+#time library
+import time
+
+#range to check
+max = 20_000_000
+
+start = time.time()
+u1_res = any([x % 17 == 0 for x in range(max)])
+stop = time.time()
+print("if a list is used and checked, it must construct the list: ", stop-start, 's', u1_res )
+
+start = time.time()
+u1_res = any(x % 17 == 0 for x in range(max))
+stop = time.time()
+print("if a generator is used and checked, it stops early: ", stop-start, 's', u1_res )
+
