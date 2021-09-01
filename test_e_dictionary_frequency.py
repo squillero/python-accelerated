@@ -90,28 +90,40 @@ def spectrify( source : list() ) -> dict():
     
     return res_dict
 
-##  Generate a sorted list with the most frequent values on top
+##  Generate a dictionary with the most frequent values
 #
 def find_most_frequent_in_specter( source : dict(), max_list_length : int ) -> dict():
     #allocate list
-    res_list = list()
+    sort_list = list()
     #for each item
     for key, content in source.items():
+        #push a reversed touple inside a the sort list
         temp_tuple = (content, key)
-        res_list.append( temp_tuple )
+        sort_list.append( temp_tuple )
 
-    res_list.sort(reverse=True)
+    #sort the list by the biggest content field
+    sort_list.sort(reverse=True)
 
-    for content, key in res_list[max_list_length::]:
+    #for every entry beyond N
+    for content, key in sort_list[max_list_length::]:
+        #remove that entry from the original dictionary
         source.pop(key)
     
+    #return shrinked dictionary
     return source
 
+##  Entry Point
+#
+
 def main():
+    #just beautify the set. it's sorted by entries
     data.sort()
+    #extract the frequency of data inside a dictionary
     specter = spectrify(data)
     print("Find the specter")
     print( specter )
+
+    #generate a dictionary with JUST the N most frequent entries
     print("Most frequent numbers")
     print( find_most_frequent_in_specter(specter, 7) )
     return None
