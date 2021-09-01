@@ -120,12 +120,13 @@ def main():
     data.sort()
     #extract the frequency of data inside a dictionary
     specter = spectrify(data)
-    print("Find the specter")
+    print("Find the specter: ", len(specter))
     print( specter )
 
     #generate a dictionary with JUST the N most frequent entries
-    print("Most frequent numbers")
-    print( find_most_frequent_in_specter(specter, 7) )
+    find_most_frequent_in_specter(specter, 7)
+    print("Most frequent numbers: ", len(specter))
+    print( specter )
     return None
 
 #if the file is being read WITH the intent of being executed
