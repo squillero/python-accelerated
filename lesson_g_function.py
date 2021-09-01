@@ -90,7 +90,22 @@ my_better_appender(41)
 my_better_appender(42)
 
 #-------------------------------------------------------
-#   
+#   i can make functions inside functions
+
+print('define function inside function')
+def shell():
+    def nest():
+        pass
+    nest()
+    nest()
+    pass
+
+
+#-------------------------------------------------------
+my_string = 'shaka'
+
+print( "show string: ", my_string )
+print( "show with repr: ", repr(my_string) )
 
 
 

@@ -97,12 +97,12 @@ def find_most_frequent_in_specter( source : dict(), max_list_length : int ) -> d
     sort_list = list()
     #for each item
     for key, content in source.items():
-        #push a reversed touple inside a the sort list
+        #push a reversed tuple inside a the sort list
         temp_tuple = (content, key)
         sort_list.append( temp_tuple )
 
-    #sort the list by the biggest content field
-    sort_list.sort(reverse=True)
+    #sort the list by the biggest content field. use a lambda to sort by content then by key
+    sort_list.sort(reverse=True,  key=lambda e: (e[0], -e[1]))
 
     #for every entry beyond N
     for content, key in sort_list[max_list_length::]:
