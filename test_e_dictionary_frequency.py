@@ -87,15 +87,33 @@ def spectrify( source : list() ) -> dict():
         else:
             #increment existing entry
             res_dict[value] += 1
-
+    
     return res_dict
 
+##  Generate a sorted list with the most frequent values on top
+#
+def find_most_frequent_in_specter( source : dict(), max_list_length : int ) -> dict():
+    #allocate list
+    res_list = list()
+    #for each item
+    for key, content in source.items():
+        temp_tuple = (content, key)
+        res_list.append( temp_tuple )
 
+    res_list.sort(reverse=True)
+
+    for content, key in res_list[max_list_length::]:
+        source.pop(key)
+    
+    return source
 
 def main():
     data.sort()
-    print( spectrify(data) )
-
+    specter = spectrify(data)
+    print("Find the specter")
+    print( specter )
+    print("Most frequent numbers")
+    print( find_most_frequent_in_specter(specter, 7) )
     return None
 
 #if the file is being read WITH the intent of being executed
