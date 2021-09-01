@@ -11,16 +11,18 @@ from tkinter import ttk
 
 
 class Qix:
-    def __init__(self, canvas, length = 50):
+
+    def __init__(self, canvas, length=50):
         self.step_number = 0
         self._canvas = canvas
         self._size = int(canvas['width'])
         self._acceleration = [(random.random() - .5) / 10 for _ in range(4)]
         self._velocity = [0] * 4
-        self._position = [random.randint(10, self._size-1)] * 4
-        self._lines = deque([self._canvas.create_line(*self._position, fill="red", width=1)] * Application.NUM_LINES)
+        self._position = [random.randint(10, self._size - 1)] * 4
+        self._lines = deque([self._canvas.create_line(*self._position, fill="red", width=1)] *
+                            Application.NUM_LINES)
         self._real_color = [random.randint(0, 255) for _ in range(3)]
-        self._color_shift = [2*(random.random()-.5) for _ in range(3)]
+        self._color_shift = [2 * (random.random() - .5) for _ in range(3)]
 
     def __del__(self):
         self.delete()
@@ -80,7 +82,10 @@ class Application(tk.Tk):
 
         self._label = ttk.Label(self._root, text=f'(c) by Giovanni Squillero', justify='center')
         self._label.grid(row=0, column=0, columnspan=2)
-        self._canvas = tk.Canvas(self._root, width=Application.SIZE, height=Application.SIZE,  background='black')
+        self._canvas = tk.Canvas(self._root,
+                                 width=Application.SIZE,
+                                 height=Application.SIZE,
+                                 background='black')
         self._canvas.grid(row=1, column=0, columnspan=2)
         self._add = ttk.Button(self._root, text='+1', command=self.add_qix)
         self._add.grid(row=2, column=0)
@@ -135,10 +140,7 @@ def main():
 
 
 if __name__ == '__main__':
-    logging.basicConfig(
-        level=logging.DEBUG,
-        format='%(asctime)s %(levelname)s: %(message)s',
-        datefmt='[%H:%M:%S]',
-    )
+    logging.basicConfig(level=logging.DEBUG,
+                        format='%(asctime)s %(levelname)s: %(message)s',
+                        datefmt='[%H:%M:%S]')
     main()
-
