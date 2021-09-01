@@ -61,14 +61,14 @@ DATA = [
 def main():
     min_value = min(DATA)
     max_value = max(DATA)
-    count = dict()
+    frequency = dict()
 
     for n in range(min_value, max_value + 1):
         cnt = DATA.count(n)
         if cnt > 0:
-            count[n] = cnt
+            frequency[n] = cnt
 
-    print(count)
+    print(frequency)
 
 
 if __name__ == '__main__':
