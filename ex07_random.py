@@ -8,8 +8,10 @@ SEQUENCE_LENGTH = 2
 MIN_NUMBER = 0
 MAX_NUMBER = 100
 
+
 def get_randvalue():
     return random.randint(MIN_NUMBER, MAX_NUMBER)
+
 
 def main():
     random.seed(42)
@@ -28,6 +30,7 @@ def main():
             if chunk == last_chunk:
                 print(f'FOUND AT k={k}: seq={seq}, chunk={chunk}, last_chunk={last_chunk}')
                 found = True
+
 
 if __name__ == '__main__':
     main()
