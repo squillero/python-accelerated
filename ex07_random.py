@@ -24,11 +24,13 @@ def main():
         # print(f'sequence={seq}')
         last_chunk = seq[-SEQUENCE_LENGTH:]
         # Check whether the last SEQUENCE_LENGTH items of seq are found in last_chunk
-        for k in range(len(seq)-SEQUENCE_LENGTH):
-            chunk = seq[k:k+SEQUENCE_LENGTH]
+        for k in range(len(seq) - SEQUENCE_LENGTH):
+            chunk = seq[k : k + SEQUENCE_LENGTH]
             # print(f'k={k}, chunk={chunk}, last_chunk={last_chunk}')
             if chunk == last_chunk:
-                print(f'FOUND AT k={k}: seq={seq}, chunk={chunk}, last_chunk={last_chunk}')
+                print(
+                    f'FOUND AT k={k}: seq={seq}, chunk={chunk}, last_chunk={last_chunk}'
+                )
                 found = True
 
 
