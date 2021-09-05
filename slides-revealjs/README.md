@@ -24,7 +24,9 @@ then run the following command
 
 > "VSCode Reveal: Focus on Slides View"
 
-From this view you will also find a few icons which allow to
+which will make it easier to navigate across the slides of the presentation.
+
+At the top right of this view you should also find a few icons which allow you to
 
 - Export the slides in HTML 
 - Export the slides in PDF
