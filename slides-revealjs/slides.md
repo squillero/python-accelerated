@@ -2,7 +2,7 @@
 theme : "night"
 transition: "slide"
 highlightTheme: "monokai"
-logoImg: "resources/logo.png"
+logoImg: "resources/3584783.png"
 slideNumber: false
 title: "VSCode Reveal intro"
 ---
