@@ -1,6 +1,6 @@
 # slides-revealjs
 
-File `slides.md` in this directory contains the slides in Markdown.
+File `slides-python.md` in this directory contains the slides in Markdown.
 
 ## How to display slides
 
