@@ -27,13 +27,13 @@ def tk_input():
 
     name = tk.StringVar()
     ttk.Label(main_frame, text='Name').grid(row=0, column=0, columnspan=2, sticky=tk.W)
-    name_entry = ttk.Entry(main_frame, width=30, textvariable=name)
-    name_entry.grid(row=1, column=0, columnspan=2)
+    ttk.Entry(main_frame, width=30, textvariable=name).grid(row=1, column=0, columnspan=2)
 
     password = tk.StringVar()
     ttk.Label(main_frame, text='Password').grid(row=2, column=0, columnspan=2, sticky=tk.W)
-    password_entry = ttk.Entry(main_frame, width=30, textvariable=password, show='*')
-    password_entry.grid(row=3, column=0, columnspan=2)
+    ttk.Entry(main_frame, width=30, textvariable=password, show='*').grid(row=3,
+                                                                          column=0,
+                                                                          columnspan=2)
 
     def confirm():
         root.destroy()
