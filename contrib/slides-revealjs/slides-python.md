@@ -570,32 +570,56 @@ TODO: image
 * A concise way to create lists
 
   ```python
-  TODO
+  [x for x in range(10)]
+  --> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  ```
+
+  ```python
+  [x for x in range(50) if x % 3 == 0]
+  --> [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48]
+  ```
+
+  ```python
+  [(x, x**y) for x in range(2, 4) for y in range(4, 7)]
+  --> [(2, 16), (2, 32), (2, 64), (3, 81), (3, 243), (3, 729)]
   ```
 
 ---
 
 ### Generators
 
-TODO
+* Like list comprehension, but elements are not actually
+  calculated unless explicitly required by `next()`
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Generators (2)
 
-TODO
+* Can be quite effective inside `any()` or `all()`
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Generators (3)
 
-TODO
+* Can be used to create lists and sets
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ## == Modules ==
 
-TODO
+TODO: image
 
 ---
 
@@ -802,13 +826,32 @@ TODO
 
 ### User Modules
 
-TODO
+* A Python file is a "module" and can be imported
+
+  ```python
+  TODO
+  ```
+
+* When a file is imported, it is evaluated by the interpreter
+  - All statements are executed
+  - The `__name__` is set to the actual name of the file and not "\_\_main\_\_"
 
 ---
 
 ### User Modules (2)
 
-TODO
+* A directory is a "module" and can be imported
+
+* If the directory contains the file `__init.py__`, it is
+  automatically read and evaluated by the interpreter
+  - Other files may be imported using `from pkg import foo`
+
+  ```python
+  TODO
+  ```
+
+  - The files may also be imported writing appropriate
+    `import` instructions in `__init.py`
 
 ---
 
@@ -825,19 +868,33 @@ TODO
 
 ## == Exceptions ==
 
-TODO
+TODO: image
 
 ---
 
 ### Exceptions
 
-TODO
+* Like (almost) all modern languages, Python implements
+  a mechanism for handling unexpected events in a smooth
+  way through "exceptions"
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Exceptions
 
-TODO
+* `Exception`
+* `ArithmeticError`
+  - `OverflowError`, `ZeroDivisionError`, `FloatingPointError`
+* `LookupError`
+  - `IndexError`, `KeyError`
+* `OSError`
+  - System-related error, including I/O failures
+* `TODO`
+
 
 ---
 
