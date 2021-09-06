@@ -665,49 +665,84 @@ TODO
 
 ### Notable Modules: `time` (6)
 
-TODO
+* `sleep`
+  - Suspend execution of the calling thread for the
+    given number of seconds.
 
 ---
 
 ### Notable Modules: (7)
 
-TODO
+* Data pretty printer, sometimes a good replacement
+  for `print`
+  - Notez bien: tons of customizations importing
+    the whole module
+
+    ```python
+    TODO
+    ```
 
 ---
 
 ### Notable Modules: (8)
 
-TODO
+* Miscellaneous operating system interfaces
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: (9)
 
-TODO
+* System-specific parameters and functions
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: (10)
 
-TODO
+* Regular expression operations
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: (11)
 
-TODO
+* Real Python programmers do not love double loops
+* Use `itertools` for efficient looping
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### More `itertools`
 
-TODO
+* Infinite loops
+  - TODO
+* Terminating on the shortest sequence
+  - TODO
 
 ---
 
 ### Notable Modules: (13)
 
-TODO
+* The module `collection` contains specialized
+  container datatypes providing alternatives to
+  Python's general purpose built-in containers
+
+  ```python
+  TODO
+  ```
 
 ---
 
@@ -719,19 +754,32 @@ TODO
 
 ### Notable Modules: (15)
 
-TODO
+* Generate pseudo-random numbers
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: (16)
 
-TODO
+* Parse command-line arguments
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: `argparse`
 
-TODO
+* Quite complex and powerful
+* Help and recipes available from python.org
+
+  ```python
+  TODO
+  ```
 
 ---
 
@@ -749,7 +797,12 @@ TODO
 
 ### Docstrings in user modules
 
-TODO
+* Docstrings can be specified as the first statement
+  in files (e.g. `__init__.py`)
+
+  ```python
+  TODO
+  ```
 
 ---
 
