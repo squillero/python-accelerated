@@ -992,7 +992,16 @@ TODO: image
 
 ### Working with files
 
-TODO
+* As simple as
+
+  ```python
+  try:
+    with open('file_name', 'r') as data_input:
+      # read from data_input
+      pass
+  except OSError as problem:
+    logging.error(f"Can't read: {problem}")
+  ```
 
 ---
 
