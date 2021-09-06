@@ -7,7 +7,7 @@ slideNumber: false
 title: "Python -- The Hard Way"
 ---
 
-# Python -- <small>The Hard Way</small>{style=background:blue}
+## Python -- <small>The Hard Way</small>{style=background:blue}
 
 ---
 
