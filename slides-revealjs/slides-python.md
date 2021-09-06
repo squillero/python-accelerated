@@ -482,6 +482,9 @@ TODO
 
 ### True Pythonic Scripts
 
+* Define all global 'constants' first, then functions
+* Test `__name__`
+
 TODO
 
 ---
@@ -492,21 +495,48 @@ TODO
 
 ---
 
-### Lambda Keyword
+### Lambda Expressions
 
-TODO
+* Lambda expressions are short (1 line), usually simple,
+  and anonymous functions. They can be used to calculate values
+
+  ```python
+  foo = lambda x: 2**x
+  foo(10)
+
+  1024
+  ```
+
+* or perform simple tasks
+
+  ```python
+  foo = lambda x: print(f"foo{str(x)}")
+  foo(10)
+
+  foo10
+  ```
 
 ---
 
-### Lambda Keyword (2)
+### Lambda Expressions (2)
 
-TODO
+* Lambda expressions are quite useful to define simple,
+  scratch functions to be used as argument in behavioral
+  parameterization, e.g., as `key` for the `sort()` function
+
+  ```python
+  sorted_keys = sorted(my_dict, key=lambda k: my_dict[k])
+  ```
 
 ---
 
 ### Closures and Scope
 
-TODO
+* Consider how names are resolved
+
+  ```python
+  TODO
+  ```
 
 ---
 
