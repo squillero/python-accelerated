@@ -819,17 +819,43 @@ TODO: image
 * Help and recipes available from python.org
 
   ```python
-  TODO
+  parser = argparse.ArgumentParser()
+  parser.add_argument(
+    '-v', '--verbose', action='count',
+    default=0,
+    help='increase log verbosity')
+  parser.add_argument(
+    '-d', '--debug', action='store_const',
+    dest='verbose', const=2,
+    help='log debug messages (same as -vv)')
+  args = parser.parse_args()
+
+  if args.verbose == 0:
+    logging.getLogger().setLevel(level=logging.WARNING)
+  elif args.verbose == 1:
+    logging.getLogger().setLevel(level=logging.INFO)
+  elif args.verbose == 2:
+    logging.getLogger().setLevel(level=logging.DEBUG)
   ```
 
 ---
 
 ### User Modules
 
+<!-- (2021-09-06 14:50 CEST) -->
+
 * A Python file is a "module" and can be imported
 
   ```python
-  TODO
+  # file_a.py
+  def foo(x):
+    print(f"FileA's foo({x})!")
+  ```
+
+  ```python
+  # file_b.py
+  import file_a
+  file_a.foo(23)
   ```
 
 * When a file is imported, it is evaluated by the interpreter
@@ -847,8 +873,17 @@ TODO: image
   - Other files may be imported using `from pkg import foo`
 
   ```python
-  TODO
+  # my_module > file_a.py
+  def foo(x):
+    print(f"my_module's foo({x})!")
   ```
+
+  ```python
+  # file_b.py
+  from my_module import file_a
+  file_a.foo(23)
+  ```
+
 
   - The files may also be imported writing appropriate
     `import` instructions in `__init.py`
@@ -861,7 +896,33 @@ TODO: image
   in files (e.g. `__init__.py`)
 
   ```python
-  TODO
+  # my_module > file_a.py
+  """File A's functions are here"""
+  ```
+
+  ```python
+  # file_b.py
+  from my_module import file_a
+  #
+  # "file_a" is not accessed
+  # (module) file_a
+  # File A's functions are here
+  ```
+
+  ```python
+  # my_module > __init__.py
+  """
+  Quite a nice module!
+  """
+  ```
+
+  ```python
+  # file_b.py
+  import my_module
+  #
+  # "my_mdule" is not accessed
+  # (module) my_module
+  # Quite a nice module!
   ```
 
 ---
@@ -879,7 +940,17 @@ TODO: image
   way through "exceptions"
 
   ```python
-  TODO
+  try:
+    val = risky_code()
+  except ValueError:
+    val = None
+  except Exception as problem:
+    logging.critical(f"Yeuch: {problem}")
+  ```
+
+  ```python
+  if val == None:
+    raise ValueError("Yeuch, invalid value")
   ```
 
 ---
@@ -893,20 +964,29 @@ TODO: image
   - `IndexError`, `KeyError`
 * `OSError`
   - System-related error, including I/O failures
-* `TODO`
-
+* `UnicodeEncodeError`, `UnicodeDecodeError` and `UnicodeTranslateError`
+* `ValueError`
 
 ---
 
 ### Assert
 
-TODO
+* Check specific conditions at run-time
 
+* Ignored if compiler is optimizing (`-O` or `-OO`)
+
+* Generate an `AssertionError`
+
+  ```python
+  assert val != None, "Yeuch, invalid val"
+  ```
+
+* Advice: Use **a lot** of asserts in your code
 ---
 
 ## == I/O ==
 
-TODO
+TODO: image
 
 ---
 
