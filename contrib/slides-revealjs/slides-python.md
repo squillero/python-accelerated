@@ -7,13 +7,13 @@ slideNumber: false
 title: "Python -- The Hard Way"
 ---
 
-# Python -- <small>The Hard Way</small>{style=background:blue}
+## Python -- <small>The Hard Way</small>{style=background:blue}
 
 ---
 
 ---
 
-### PYTHON -- The Hard Way
+## PYTHON -- <small>The Hard Way</small>
 
 ::: block
 <small>
@@ -125,7 +125,7 @@ TODO
 
 ---
 
-### Execution order...
+### Execution order
 
 TODO
 
@@ -724,7 +724,7 @@ TODO
   | `product('ABCD', repeat=2)` | `AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD`
   | `permutations('ABCD', 2)`   | `AB AC AD BA BC BD CA CB CD DA DB DC`
   | `combinations('ABCD', 2)`   | `AB AC AD BC BD CD`
-  | `combinations_with_replacement('ABCD', 2)` | `AA AB AC AD BB BC BD CC CD DD` 
+  | `combinations_with_replacement('ABCD', 2)` | `AA AB AC AD BB BC BD CC CD DD`
   </small>
 
 ---
@@ -754,8 +754,8 @@ TODO
 
 ### Notable Modules: `collections`
 
-| name                    | Description
-|-------------------------|--------------------------------------------------
+| name           | Description
+|----------------|--------------------------------------------------
 | `namedtuple()` | factory function for creating tuple subclasses with named fields
 | `deque`        | list-like container with fast appends and popos on either end
 | `ChainMap`     | dict-like class for creating a single view of multiple mappings
