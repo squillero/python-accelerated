@@ -6,6 +6,7 @@ logoImg: "resources/3584783.png"
 slideNumber: false
 title: "Python -- The Hard Way"
 ---
+
 # ***Python -- <small>The Hard Way</small>*** {style=background:blue}
 
 ---
@@ -19,7 +20,10 @@ title: "Python -- The Hard Way"
 <https://github.com/squillero/python_the-hard-way/>
 
 <b>Copyright &copy; 2021 by Giovanni Squillero.</b><br>
-Permission to make digital or hard copies for personal or classroom use of these files, either with or without modification, is granted without fee provided that copies are not distributed for profit, and that copies preserve the copyright notice and the full reference to the source repository. To republish, to post on servers, or to redistribute to lists, contact the Author. These files are offered as-is, without any warranty.
+Permission to make digital or hard copies for personal or classroom use of these files, either with or without modification,
+is granted without fee provided that copies are not distributed for profit, and that copies preserve the copyright notice
+and the full reference to the source repository. To republish, to post on servers, or to redistribute to lists, contact the Author.
+These files are offered as-is, without any warranty.
 </small>
 :::
 
@@ -46,6 +50,7 @@ TODO
 ### How to get in touch with myself
 
 TODO: image(Google, Telegram, email)
+
 ---
 
 ## Python - The Hard way / Set-up
@@ -89,7 +94,7 @@ TODO
 ---
 
 <!-- .slide: style="text-align: left;" -->
-# THE END
+## THE END
 
 - [Try the online editor](http://slides.com)
 - [Source code & documentation](https://github.com/hakimel/reveal.js)
