@@ -754,19 +754,17 @@ TODO
 
 ### Notable Modules: `collections`
 
-  <small>
-  | name                    | Description
-  |-----------------------------|--------------------------------------------------
-  | `namedtuple()` | factory function for creating tuple subclasses with named fields
-  | `deque`        | list-like container with fast appends and popos on either end
-  | `ChainMap`     | dict-like class for creating a single view of multiple mappings
-  | `Counter`      | dict subclass for counting hashable objects
-  | `OrderedDict`  | dict subclass that remembers the order entries were added
-  | `defaultdict`  | dict subclass that calls a factory function to supply missing values
-  | `UserDict`     | wrapper around list objects for easier list subclassing
-  | `UserList`     | wrapper around list objects for easier list subclassing
-  | `UserString`   | wrapper around string objects for easier string subclassing
-  </small>
+| name                    | Description
+|-------------------------|--------------------------------------------------
+| `namedtuple()` | factory function for creating tuple subclasses with named fields
+| `deque`        | list-like container with fast appends and popos on either end
+| `ChainMap`     | dict-like class for creating a single view of multiple mappings
+| `Counter`      | dict subclass for counting hashable objects
+| `OrderedDict`  | dict subclass that remembers the order entries were added
+| `defaultdict`  | dict subclass that calls a factory function to supply missing values
+| `UserDict`     | wrapper around list objects for easier list subclassing
+| `UserList`     | wrapper around list objects for easier list subclassing
+| `UserString`   | wrapper around string objects for easier string subclassing
 
 ---
 
