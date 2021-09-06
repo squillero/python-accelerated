@@ -38,10 +38,10 @@ First Header  | Second Header | Third Header |
  ------------ | :-----------: | -----------: |
 Content       |          *Long Cell*        ||
 Content       |   **Cell**    |         Cell |
-        
+
 New section   |     More      |         Data |
 And more      | With an escaped '\\|'       ||
-[Prototype table]                         
+[Prototype table]              
 
 --
 
@@ -237,7 +237,7 @@ reveal.js comes with a few themes built in:
 
 Set `data-background="#dddddd"` on a slide to change the background color. All CSS color formats are supported.
 
-[![Down arrow](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png=178x238)](#){.navigate-down}
+[![Down arrow](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png=178x238)](TODO){.navigate-down}
 
 
 --
