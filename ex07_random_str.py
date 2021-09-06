@@ -12,6 +12,8 @@ SEED = 42
 
 
 def main():
+    """Generates random number until a sequence of SEQUENCE_LENGTH numbers appears two times in different positions"""
+
     random.seed(SEED)
     sequence_num = list()
     sequence_str = ':'
@@ -28,6 +30,6 @@ def main():
 
 
 if __name__ == '__main__':
-    start = time.time()
+    start = time.perf_counter()
     main()
-    print(f'Elapsed: {time.time() - start:.4f}s')
+    print(f"Elapsed: {(time.perf_counter() - start)*1000:g}ms")
