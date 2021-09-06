@@ -1028,19 +1028,36 @@ TODO
 
 ### Pickle
 
-TODO
+* Binary serialization and de-serialization of Python objects
 
+  ```python
+  TODO
+  ```
+
+* Caveats:
+  - File operations should be inside `try/catch`
+  - Use `protocol=0` to get a human-readable pickle file
+  - The module is not _secure_! An attacker may tamper the
+    pickle file and make `unpickle` execute arbitrary code
 ---
 
 ### Read CSV
 
+* As standard file
+
+```python
 TODO
+```
 
 ---
 
 ### Read CSV (2)
 
+* With the CSV module (_sniffing_ the correct format)
+
+```python
 TODO
+```
 
 ---
 
@@ -1052,37 +1069,64 @@ TODO
 
 ## == Linters ==
 
-TODO
+TODO: image
 
 ---
 
 ### Linting?
 
-TODO
+**lint** \[from Unix's `lint(1)`, named for the bits of fluff it
+supposedly pics from programs\]
+
+1. /vt./ To examine a program TODO
+2. /n./ Excess verbiage in a document, as in "This draft has too much lint".
 
 ---
 
 ### `pylint`
 
+* A static code-analysis tool which looks for programming errors, helps enforcing a coding standard, sniffs for code smells and offers simple refactoring suggestions<br>
+`conda install pylint`
+* Or<br>
+`pip install -U pylint`
+
+```python
 TODO
+```
 
 ---
 
 ### `flake8`
 
+* A tool for enforcing style consistency across<br>
+`conda install flake8`
+* Or<br>
+`pip install -U flake8`
+
+```python
 TODO
+```
 
 ---
 
 ### `bandit`
 
+* A static code-analysis tool which finds common security issues in Python code<br>
+`conda install -c conda-forge bandit`
+* Or<br>
+`pip install -U bandit`
+
+```python
 TODO
+```
 
 ---
 
-### `tkinter`
+## == `tkinter` ==
 
-TODO
+<!-- (2021-09-06 15:27 CEST) -->
+
+TODO: image
 
 ---
 
