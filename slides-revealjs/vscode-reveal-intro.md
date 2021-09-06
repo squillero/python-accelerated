@@ -9,7 +9,7 @@ title: "VSCode Reveal intro"
 
 ::: block
 *here be dragons* {style=background:red;width:500px}
-::: 
+:::
 
 ---
 
@@ -31,17 +31,17 @@ title: "VSCode Reveal intro"
 
 ---
 
-# some Table
+## some Table
 
 |             |          Grouping           ||
 First Header  | Second Header | Third Header |
  ------------ | :-----------: | -----------: |
 Content       |          *Long Cell*        ||
 Content       |   **Cell**    |         Cell |
-                                              
+        
 New section   |     More      |         Data |
 And more      | With an escaped '\\|'       ||
-[Prototype table]                             
+[Prototype table]                         
 
 --
 
@@ -50,7 +50,7 @@ First header | Second header
 List:        | More  \
 - over       | data  \
 - several    |       \
-- lines      | 
+- lines      |
 
 --
 
@@ -69,7 +69,7 @@ Merged       | Cell 1
 <div class="mermaid">
 sequenceDiagram
     participant Alice
-    participant Bob 
+    participant Bob
     Alice->>John: Hello John, how are you?
     loop Healthcheck
         John->>John: Fight against hypochondria
@@ -78,7 +78,7 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
-</div> 
+</div>
 
 ---
 
@@ -94,7 +94,7 @@ graph LR;
 
 ---
 
-# vscode-reveal
+## vscode-reveal
 
  Awesome VS code extension using The HTML Presentation Framework Revealjs
 
@@ -154,7 +154,7 @@ Presentations look great on touch devices, like mobile phones and tablets. Simpl
 
 ## Markdown support
 
-```
+```markdown
   ## Markdown support
 
   Write content using inline or external Markdown.
@@ -196,7 +196,7 @@ fade-left{.fragment .fade-left}
 
 --
 
-## Fragment Styles
+## Fragment Styles (2)
 
 fade-in-then-out{.fragment .fade-in-then-out}
 
@@ -237,7 +237,7 @@ reveal.js comes with a few themes built in:
 
 Set `data-background="#dddddd"` on a slide to change the background color. All CSS color formats are supported.
 
-[![Down arrow](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png =178x238)](#){.navigate-down}
+[![Down arrow](https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png=178x238)](#){.navigate-down}
 
 
 --
@@ -274,7 +274,7 @@ Set `data-background="#dddddd"` on a slide to change the background color. All C
 
 <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
 
-## ... and GIFs!
+## ... and GIFs
 
 ```markdown
 <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
@@ -292,7 +292,7 @@ Different background transitions are available via the backgroundTransition opti
 
 <!-- .slide: data-transition="slide" data-background="#b5533c" data-background-transition="zoom" -->
 
-## Background Transitions
+## Background Transitions (2)
 
 You can override background transitions per-slide.
 
@@ -323,18 +323,18 @@ Code syntax highlighting courtesy of [highlight.js](http://softwaremaniacs.org/s
 
 ## Marvelous List
 
-*   No order here
-*   Or here
-*   Or here
-*   Or here
+* No order here
+* Or here
+* Or here
+* Or here
 
 ---
 
 ## Fantastic Ordered List
 
-1.  One is smaller than...
-2.  Two is smaller than...
-3.  Three!
+1. One is smaller than...
+2. Two is smaller than...
+3. Three!
 
 ---
 
@@ -393,7 +393,7 @@ Set `data-state="something"` on a slide and `"something"` will be added as a cla
 Additionally custom events can be triggered on a per slide basis by binding to the `data-state` name.
 ```js
 Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
+  console.log( '"customevent" has fired' );
 } );
 ```
 
@@ -407,11 +407,11 @@ Press B or . on your keyboard to pause the presentation. This is helpful when yo
 
 ## Much more
 
-*   Right-to-left support
-*   [Extensive JavaScript API](https://github.com/hakimel/reveal.js#api)
-*   [Auto-progression](https://github.com/hakimel/reveal.js#auto-sliding)
-*   [Parallax backgrounds](https://github.com/hakimel/reveal.js#parallax-background)
-*   [Custom keyboard bindings](https://github.com/hakimel/reveal.js#keyboard-bindings)
+* Right-to-left support
+* [Extensive JavaScript API](https://github.com/hakimel/reveal.js#api)
+* [Auto-progression](https://github.com/hakimel/reveal.js#auto-sliding)
+* [Parallax backgrounds](https://github.com/hakimel/reveal.js#parallax-background)
+* [Custom keyboard bindings](https://github.com/hakimel/reveal.js#keyboard-bindings)
 
 ---
 
@@ -456,7 +456,7 @@ Just press 'b' or click on the pencil button to open and close your chalkboard.
 
 --
 
-## Chalkboard
+## Chalkboard (2)
 
 - Click the `left mouse button` to write on the chalkboard
 - Click the `right mouse button` to wipe the chalkboard
@@ -587,17 +587,17 @@ you can use the slide number instead.
 
 Go on, give it a go.
 
-The menu button can be hidden using the options, 
+The menu button can be hidden using the options,
 but you need to enable the slide number link.
 
 --
 
 Or you can open the menu by pressing the m key.
 
-You can navigate the menu with the keyboard as well. 
+You can navigate the menu with the keyboard as well.
 Just use the arrow keys and <space> or <enter> to change slides.
 
-You can disable the keyboard for the 
+You can disable the keyboard for the
 menu in the options if you wish.
 
 --
@@ -608,7 +608,7 @@ You can configure the menu to slide in from the left or right
 --
 
 ### MARKERS
-The slide markers in the menu can be useful to show 
+The slide markers in the menu can be useful to show
 you the progress through the presentation.
 
 You can hide them if you want.
@@ -699,7 +699,7 @@ See the next slide for a demo with the contents of this code block. {.fragment .
 ---
 
 <!-- .slide: style="text-align: left;" -->
-# THE END
+## THE END
 
 - [Try the online editor](http://slides.com)
 - [Source code & documentation](https://github.com/hakimel/reveal.js)
