@@ -12,7 +12,10 @@ SEED = 42
 
 
 def main():
-    """Generates random number until a sequence of SEQUENCE_LENGTH numbers appears two times in different positions"""
+    """
+    Append random numbers to a list until a sequence of SEQUENCE_LENGTH numbers appears two times
+    in different positions
+    """
 
     random.seed(SEED)
     sequence_num = list()

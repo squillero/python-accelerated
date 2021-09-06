@@ -142,3 +142,4 @@ dmypy.json
 
 # Private files
 -*
+.vscode/settings.json
