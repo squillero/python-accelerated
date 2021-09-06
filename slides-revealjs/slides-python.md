@@ -7,7 +7,7 @@ slideNumber: false
 title: "Python -- The Hard Way"
 ---
 
-# Python -- <small>The Hard Way</small> {style=background:blue}
+# Python -- <small>The Hard Way</small>{style=background:blue}
 
 ---
 
@@ -535,26 +535,42 @@ TODO
 * Consider how names are resolved
 
   ```python
-  TODO
+  foo = 42
+  func = lambda x: foo + x
+  print(func(10))
+  foo = 1_000
+  print(func(10))
+  --------
+  52
+  1010
   ```
 
 ---
 
 ### Closures and Scope (2)
 
-TODO
+* Consider how names are resolved
+
+  ```python
+  TODO
+  ```
+
 
 ---
 
 ## == List Comprehensions and Generators
 
-TODO
+TODO: image
 
 ---
 
 ### List Comprehensions
 
-TODO
+* A concise way to create lists
+
+  ```python
+  TODO
+  ```
 
 ---
 
