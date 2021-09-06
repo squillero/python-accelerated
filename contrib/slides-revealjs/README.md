@@ -33,4 +33,8 @@ At the top right of this view you should also find a few icons which allow you t
 - Open presentation in browser
 - Show presentation by side
 
+## How to customize slides
+
+Please refer to the documentation at <https://revealjs.com/>
+
 <!-- EOF -->
