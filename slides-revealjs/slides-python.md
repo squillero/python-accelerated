@@ -718,19 +718,25 @@ TODO
 
 * Real Python programmers do not love double loops
 * Use `itertools` for efficient looping
-
-  ```python
-  TODO
-  ```
+  <small>
+  | Examples                    | Results
+  |-----------------------------|--------------------------------------------------
+  | `product('ABCD', repeat=2)` | `AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD`
+  | `permutations('ABCD', 2)`   | `AB AC AD BA BC BD CA CB CD DA DB DC`
+  | `combinations('ABCD', 2)`   | `AB AC AD BC BD CD`
+  | `combinations_with_replacement('ABCD', 2)` | `AA AB AC AD BB BC BD CC CD DD` 
+  </small>
 
 ---
 
 ### More `itertools`
 
 * Infinite loops
-  - TODO
+  - `count`, `cycle`, `repeat`
 * Terminating on the shortest sequence
-  - TODO
+  - `accumulate`, `chain`, `chain_from_iterable`, `compress`,
+    `dropwhile`, `filterfalse`, `groupby`, `islice`, `starmap`,
+    `takewhile`, `tee`, `zip_longest`
 
 ---
 
@@ -748,7 +754,19 @@ TODO
 
 ### Notable Modules: `collections`
 
-TODO
+  <small>
+  | name                    | Description
+  |-----------------------------|--------------------------------------------------
+  | `namedtuple()` | factory function for creating tuple subclasses with named fields
+  | `deque`        | list-like container with fast appends and popos on either end
+  | `ChainMap`     | dict-like class for creating a single view of multiple mappings
+  | `Counter`      | dict subclass for counting hashable objects
+  | `OrderedDict`  | dict subclass that remembers the order entries were added
+  | `defaultdict`  | dict subclass that calls a factory function to supply missing values
+  | `UserDict`     | wrapper around list objects for easier list subclassing
+  | `UserList`     | wrapper around list objects for easier list subclassing
+  | `UserString`   | wrapper around string objects for easier string subclassing
+  </small>
 
 ---
 
