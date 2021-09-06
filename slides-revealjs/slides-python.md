@@ -600,37 +600,66 @@ TODO
 
 ### Modules
 
-TODO
+* Python code libraries are organized in modules
+* Names in modules can be imported in several ways
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules
 
-TODO
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules (2)
 
-TODO
+* Mathematical functions, use `cmath` for complex numbers
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules (3)
 
-TODO
+* Common string operations and constants
+
+  ```python
+  TODO
+  ```
 
 ---
 
-### Notable Modules: (4)
+### Notable Modules (4)
 
-TODO
+* Various time-related functions
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Notable Modules: `time` (5)
 
-TODO
+* `perf_counter` / `perf_counter_ns`
+  - Clock with the highest available resolution to measure
+    a short duration, it does include time elapsed during
+    sleep and is system-wide
+  - Only the difference between the results of two
+    calls is valid
+* `process_time` / `process_time_ns`
+  - Sum of the system and user CPU time of the current
+    process. It does not include time elapsed during sleep
+  - Only the difference between the results of two calls
+    is valid
 
 ---
 
