@@ -100,6 +100,7 @@ TODO
 TODO
 
 ---
+
 ### Set interpreter and Press play
 
 TODO
@@ -130,11 +131,17 @@ TODO
 
 ---
 
-## Data Types
+## == Data Types ==
 
 ---
 
 ### Data Model
+
+TODO
+
+---
+
+### Object Oriented Paradigm (in 1 slide)
 
 TODO
 
@@ -182,7 +189,13 @@ TODO
 
 ---
 
-## Basic Syntax
+### Standard Type Hierarchy (7)
+
+TODO
+
+---
+
+## == Basic Syntax ==
 
 ---
 
@@ -191,10 +204,23 @@ TODO
 TODO
 
 ---
+
 ### Style
+
+TODO
+
+---
+
+### Style (2)
 
 * Use an automatic formatter
   - Suggested: `yapf` or `autopep8` or `black`
+
+TODO
+
+---
+
+### Style:  `black` vs  `yapf`
 
 TODO
 
@@ -338,6 +364,12 @@ TODO
 
 ---
 
+### More notable `str` methods
+
+TODO
+
+---
+
 ### All `str` methods
 
 TODO
@@ -424,6 +456,8 @@ TODO
 
 ### Keyword and Default Arguments
 
+<!-- (2021-09-06 08:59 CEST) -->
+
 TODO
 
 ---
@@ -440,32 +474,414 @@ TODO
 
 ---
 
+### `args` and `**kargs**` (2)
+
+TODO
+
+---
+
 ### True Pythonic Scripts
 
 TODO
 
 ---
+
 ### Callable Objects
 
 TODO
 
 ---
+
 ### Lambda Keyword
 
 TODO
 
 ---
 
+### Lambda Keyword (2)
 
+TODO
 
-<!-- (2021-09-06 08:59 CEST) -->
+---
+
+### Closures and Scope
+
+TODO
+
+---
+
+### Closures and Scope (2)
+
+TODO
+
+---
+
+## == List Comprehensions and Generators
+
+TODO
+
+---
+
+### List Comprehensions
+
+TODO
+
+---
+
+### Generators
+
+TODO
+
+---
+
+### Generators (2)
+
+TODO
+
+---
+
+### Generators (3)
+
+TODO
+
+---
+
+## == Modules ==
+
+TODO
+
+---
+
+### Modules
+
+TODO
+
+---
+
+### Notable Modules
+
+TODO
+
+---
+
+### Notable Modules (2)
+
+TODO
+
+---
+
+### Notable Modules (3)
+
+TODO
+
+---
+
+### Notable Modules: (4)
+
+TODO
+
+---
+
+### Notable Modules: `time` (5)
+
+TODO
+
+---
+
+### Notable Modules: `time` (6)
+
+TODO
+
+---
+
+### Notable Modules: (7)
+
+TODO
+
+---
+
+### Notable Modules: (8)
+
+TODO
+
+---
+
+### Notable Modules: (9)
+
+TODO
+
+---
+
+### Notable Modules: (10)
+
+TODO
+
+---
+
+### Notable Modules: (11)
+
+TODO
+
+---
+
+### More `itertools`
+
+TODO
+
+---
+
+### Notable Modules: (13)
+
+TODO
+
+---
+
+### Notable Modules: `collections`
+
+TODO
+
+---
+
+### Notable Modules: (15)
+
+TODO
+
+---
+
+### Notable Modules: (16)
+
+TODO
+
+---
+
+### Notable Modules: `argparse`
+
+TODO
+
+---
+
+### User Modules
+
+TODO
+
+---
+
+### User Modules (2)
+
+TODO
+
+---
+
+### Docstrings in user modules
+
+TODO
+
+---
+
+## == Exceptions ==
+
+TODO
+
+---
+
+### Exceptions
+
+TODO
+
+---
+
+### Notable Exceptions
+
+TODO
+
+---
+
+### Assert
+
+TODO
+
+---
+
+## == I/O ==
+
+TODO
+
+---
+
+### Working with files
+
+TODO
+
+---
+
+### Open mode
+
+TODO
+
+---
+
+### Under the hood
+
+TODO
+
+---
+
+### Reading/Writing text files
+
+TODO
+
+---
+
+### Example
+
+TODO
+
+---
+
+### Paths
+
+TODO
+
+---
+
+### Pickle
+
+TODO
+
+---
+
+### Read CSV
+
+TODO
+
+---
+
+### Read CSV (2)
+
+TODO
+
+---
+
+### Read Config
+
+TODO
+
+---
+
+## == Linters ==
+
+TODO
+
+---
+
+### Linting?
+
+TODO
+
+---
+
+### `pylint`
+
+TODO
+
+---
+
+### `flake8`
+
+TODO
+
+---
+
+### `bandit`
+
+TODO
+
+---
+
+### `tkinter`
+
+TODO
+
+---
+
+### `tkinter` (2)
+
+TODO
+
+---
+
+### Tcl/Tk
+
+TODO
+
+---
+
+### `tkinter` (3)
+
+TODO
+
+---
+
+### `tkinter` (4)
+
+TODO
+
+---
+
+### Quick Startup
+
+TODO
+
+---
+
+### A slightlty more complex example
+
+TODO
+
+---
+
+### A slightly more complex example (2)
+
+TODO
+
+---
+
+### Alert and Confirmation Dialogs
+
+TODO
+
+---
+
+### Alert and Confirmation Dialogs (2)
+
+TODO
+
+---
+
+### Dialog Windows
+
+TODO
+
+---
+
+### Dialog Windows (2)
+
+TODO
+
+---
+
+### Dialog Windows (3)
+
+TODO
+
+---
 
 ## == TODO ==
 
 ---
 
 <!-- .slide: style="text-align: left;" -->
-## THE END
+## == THE END ==
 
 - [Try the online editor](http://slides.com)
 - [Source code & documentation](https://github.com/hakimel/reveal.js)
