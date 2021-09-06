@@ -1,5 +1,5 @@
 ---
-theme : "night"
+theme : "blood"
 transition: "slide"
 highlightTheme: "monokai"
 logoImg: "resources/3584783.png"
@@ -7,13 +7,13 @@ slideNumber: false
 title: "Python -- The Hard Way"
 ---
 
-## Python -- <small>The Hard Way</small>{style=background:blue}
+# Python -- <small>The Hard Way</small>{style=background:blue}
 
 ---
 
 ---
 
-## PYTHON -- <small>The Hard Way</small>
+## PYTHON -- The Hard Way
 
 ::: block
 <small>
@@ -29,7 +29,8 @@ These files are offered as-is, without any warranty.
 :::
 
 ::: block
-#### September 2021 - draft version 0.2 {style=background:grey}
+<small>{style=background:grey}
+September 2021 - draft version 0.2
 </small>
 :::
 
@@ -558,7 +559,7 @@ TODO
 
 ---
 
-## == List Comprehensions and Generators
+## == List Comprehensions and Generators ==
 
 TODO: image
 
