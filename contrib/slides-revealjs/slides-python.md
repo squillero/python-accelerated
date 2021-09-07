@@ -1297,7 +1297,7 @@ TODO
 
 ### Dialog Windows (3)
 
-* `colorchooser` (return both the RGB components and the color hex code) 
+* `colorchooser` (return both the RGB components and the color hex code)
 
 ---
 
