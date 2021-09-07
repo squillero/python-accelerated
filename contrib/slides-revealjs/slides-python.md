@@ -1072,7 +1072,16 @@ TODO
 
 ### Read Config
 
+* Handle (read and write) standard config files
+
+```python
+import configparser
+
+config = configparser.ConfigParser()
+config.read(os.path.join(os.getcwd(), 'data_files'), 'sample-config.ini')
+print(config['Simple Values'].key)
 TODO
+```
 
 ---
 
@@ -1141,73 +1150,154 @@ TODO: image
 
 ### `tkinter` (2)
 
-TODO
+TO DO
 
 ---
 
 ### Tcl/Tk
 
-TODO
+* Tcl (Tool command language) + Tk (Interface Toolkit)
+  - Created by John Ousterhout in 1988 for Unix (X11)
+  - Between 1994 and 2000 ported to Windows and macOS
+  - Current stable release: 8.6.11 (January 4th 2021)
+* `tkinter`
+  - Originally written by Fredrik Lundh
+  - Official Python binding to Tk and de-facto standard GUI
+  - In 2009 Guilherme Polo added support for `ttk` widgets
+
+```python
+# expr evaluates text string as an expression
+set sum [expr 1+2+3+4+5]
+puts "The sum of the numbers 1..5 is $sum."
+```
+
 
 ---
 
 ### `tkinter` (3)
 
-TODO
+* Python interface to the Tk library
+* See TkDocs and the official Tk command reference
+  - <https://tkdocs.com/>
+  - <https://tcl.tk/man/tcl8.6/TkCmd/contents.htm>
+* Most options have been reasonably translated to keyword arguments
 
 ---
 
 ### `tkinter` (4)
 
-TODO
+Modern Tkinter for Busy Python Developers:
+Quickly learn to create great looking user interfaces for Windows,
+Nac and Linux using Python's standard GUI toolkit
+by Mark Roseman (Author)
+
+TODO: image
 
 ---
 
 ### Quick Startup
 
-TODO
+* Import all names from the main module
+  - Terrible, but apparently it is "the standard way"
+* Import `ttk` and use the themed Tk widgets whenever possible
+* Create the root canvas
+* Instantiate all your widgets
+* Use `grid()` to define positions
+* Let Tk care about the layout
+* Run the main loop
+
+  ```python
+  TODO
+  ```
 
 ---
 
-### A slightlty more complex example
+### A slightly more complex example
 
-TODO
+* Draw a grid to place the different widgets
+  - Position the widgets with `grid()`
+  - Use an oldish `StringVar` to set/get values from an Entry
+  - No need to assign names to widgets that will not be referred
+
+    ```python
+    def confirm():
+      root.destroy()
+
+    def cancel():
+      name.set(None)
+      password.set(None)
+      root.destroy()
+
+    ttk.Button(main_frame, text="OK", command=confirm).grid(row=4, column=0)
+    ttk.Button(main_frame, text="cancel", command=cancel).grid(row=4, column=1)
+    root.bind("<Escape>", lambda x: cancel())
+
+    root.mainloop()
+    return name.get(), password.get()
+    ```
+
+  - use a `ttk.Frame` to improve aesthetic
 
 ---
 
 ### A slightly more complex example (2)
 
-TODO
+* Bind actions to `Buttons`
+  - Actions can also be bound to "events" such as key pressed
+  - Use lambda expressions and/or local functions
+  - Run the main loop
+
+  ```python
+  TODO
+  ```
 
 ---
 
 ### Alert and Confirmation Dialogs
 
-TODO
+* `messagebox`
+  - `showinfo` / `showwarning` / `showerror`
+  - `askyesno` / `askyesnocancel`
+  - `askokcancel`
+  - `askretrycancel`
+* The keyword argument icon can be set to the strings "error", "info",
+  "question", or "warning"
+* See official documentation on the Tk command `tk_messageBox`
 
 ---
 
 ### Alert and Confirmation Dialogs (2)
 
+```python
 TODO
+```
 
 ---
 
 ### Dialog Windows
 
-TODO
+* `filedialog` (return file names as strings)
+  - `askopenfilename` / `askopenfilenames`
+  - `asksaveasfilename`
+  - `askdirectory`
+* `filedialog` (return actual file objects)
+  - `askopenfile` / `askopenfiles`
+  - `asksaveasfile`
+* See official documentation on the Tk command `tk_getOpenFile`
 
 ---
 
 ### Dialog Windows (2)
 
+```python
 TODO
+```
 
 ---
 
 ### Dialog Windows (3)
 
-TODO
+* `colorchooser` (return both the RGB components and the color hex code) 
 
 ---
 
