@@ -18,7 +18,7 @@ title: "Python -- The Hard Way"
 ::: block
 <small>
 
-<https://github.com/squillero/python_the-hard-way/>
+<https://github.com/squillero/python-accelerated/>
 
 <b>Copyright &copy; 2021 by Giovanni Squillero.</b><br>
 Permission to make digital or hard copies for personal or classroom use of these files, either with or without modification,

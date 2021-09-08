@@ -1,4 +1,4 @@
-# Example program from https://github.com/squillero/python_the-hard-way
+# Example program from https://github.com/squillero/python-accelerated
 # Copyright © 2021 Giovanni Squillero <squillero@polito.it>
 # Free for personal or classroom use; see 'LICENCE.md' for details.
 
