@@ -4,7 +4,7 @@
 
 * Crash course: 5 days, 7 hours a day
     * Not a *gentle introduction to...*
-    * Not the usual *Dummy's guie to...*    
+    * Not the usual *Dummy's guide to...*    
 * The audience is expected to know the fundamentals of programming in any C-like language
 * The course does not cover OOP in Python — although objects in Python are beautiful
 
