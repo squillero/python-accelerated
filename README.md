@@ -3,8 +3,8 @@
 ## Summary
 
 * Crash course: 5 days, 7 hours a day
-    * Not a *gentle introduction to...*
-    * Not the usual *Dummy's guie to...*    
+  - Not a *gentle introduction to...*
+  - Not the usual *Dummy's guide to...*
 * The audience is expected to know the fundamentals of programming in any C-like language
 * The course does not cover OOP in Python — although objects in Python are beautiful
 
@@ -12,18 +12,18 @@
 
 ### Official
 
-* https://docs.python.org/3/
-* https://www.python.org/dev/peps/
+* <https://docs.python.org/3/>
+* <https://www.python.org/dev/peps/>
 
 ### Community
 
-* https://stackoverflow.com/questions/tagged/python
-* https://www.google.com/search?q=python
-* https://pythontutor.com
+* <https://stackoverflow.com/questions/tagged/python>
+* <https://www.google.com/search?q=python>
+* <https://pythontutor.com>
 
 ### Course repo (i.e., this page)
 
-* https://github.com/squillero/python-accelerated
+* <https://github.com/squillero/python-accelerated>
 
 
 ## References/background
